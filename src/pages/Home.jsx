@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import tick from "../assets/tick.png";
 import Services from "../components/Services";
+import Story from "../components/Story";
+import WhatWeDo from "../components/WhatWeDo";
+import OurWork from "../components/OurWork";
 import "../style/Home.css";
 
 const features = [
@@ -15,7 +18,6 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <Navbar />
 
         <h1 className="hero__title">
           <span>Excellence innovating</span>
@@ -56,6 +58,9 @@ export default function Home() {
 
       <About />
       <Services />
+      <Story />
+      <WhatWeDo />
+      <OurWork />
     </>
   );
 }

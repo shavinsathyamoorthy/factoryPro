@@ -1,0 +1,166 @@
+.work {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 1520.39px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #222222;
+  font-family: "Manrope", sans-serif;
+}
+
+.work__label {
+  position: absolute;
+  top: 113.4px;
+  left: 320px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.work__label img {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
+.work__title {
+  position: absolute;
+  top: 145.8px;
+  left: 320px;
+  margin: 0;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.work__title span {
+  display: block;
+  font-weight: 300;
+}
+
+.work__title strong {
+  display: block;
+  font-weight: 700;
+}
+
+.work__text {
+  position: absolute;
+  top: 160.7px;
+  left: 1050px;
+  width: 545.59px;
+  height: 49.18px;
+  margin: 0;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0;
+  color: #727272;
+}
+
+.work__filters {
+  position: absolute;
+  top: 343px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.work__filter {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #222222;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  transition: color 0.2s ease;
+}
+
+.work__filter:hover,
+.work__filter.is-active {
+  color: #ff9900;
+}
+
+.work__sep {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #222222;
+}
+
+.work__grid {
+  position: absolute;
+  top: 427.39px;
+  left: 320px;
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(2, 625px);
+  gap: 30px;
+}
+
+.work__card {
+  position: relative;
+  width: 625px;
+  height: 491.5px;
+  opacity: 1;
+}
+
+.work__img {
+  display: block;
+  width: 625px;
+  height: 437.5px;
+  border-radius: 40px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.work__tag {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+.work__name {
+  position: absolute;
+  top: 469px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #222222;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.work__empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #727272;
+  font-size: 16px;
+  line-height: 27.2px;
+}

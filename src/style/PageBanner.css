@@ -1,0 +1,125 @@
+body:has(.page-banner) .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 520.8px;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--banner-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.page-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.19) 0.02%, #000000 100%);
+  opacity: 1;
+  z-index: 1;
+}
+
+.banner-inner {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1280px;
+  max-width: calc(100% - 48px);
+  z-index: 2;
+}
+
+.banner-title {
+  height: 84px;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 84px;
+  letter-spacing: -0.7px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.banner-title strong {
+  font-weight: 700;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 27.19px;
+  margin: 5px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li,
+.breadcrumb a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+}
+
+.breadcrumb .current {
+  color: #ff9900;
+}
+
+.breadcrumb .dot {
+  display: block;
+  width: 6.325px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ff9900;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 991px) {
+  .page-banner {
+    height: 420px;
+  }
+  .banner-inner {
+    top: 190px;
+  }
+  .banner-title {
+    font-size: 46px;
+    line-height: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-inner {
+    top: 160px;
+  }
+  .banner-title {
+    font-size: 34px;
+    line-height: 44px;
+    height: 44px;
+  }
+}

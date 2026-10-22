@@ -1,0 +1,163 @@
+.reviews {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 1061.5px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #f5f5f5;
+  color: #222;
+  font-family: "Manrope", sans-serif;
+}
+
+.reviews__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__img,
+.reviews__label,
+.reviews__title,
+.reviews__quote,
+.reviews__person,
+.reviews__nav,
+.reviews__line,
+.reviews__logos {
+  position: absolute;
+}
+
+.reviews__img {
+  top: 110px;
+  left: 320px;
+  width: 610px;
+  height: 640.5px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.reviews__label {
+  top: 183.8px;
+  left: 990px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.reviews__label img {
+  width: 16px;
+  height: 16px;
+}
+
+.reviews__title {
+  top: 216.5px;
+  left: 990px;
+  margin: 0;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.reviews__title span,
+.reviews__title strong {
+  display: block;
+}
+
+.reviews__title span {
+  font-weight: 300;
+}
+
+.reviews__title strong {
+  font-weight: 700;
+}
+
+.reviews__quote {
+  top: 423.5px;
+  left: 990px;
+  width: 610px;
+  margin: 0;
+  color: #81848a;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.reviews__person {
+  top: 619.1px;
+  left: 990px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews__person img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.reviews__name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.reviews__role {
+  margin: 0;
+  color: #81848a;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+.reviews__nav {
+  top: 623.1px;
+  left: 1458px;
+  display: flex;
+  gap: 30px;
+}
+
+.reviews__btn {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 10px;
+  background: #ff9900;
+  cursor: pointer;
+}
+
+.reviews__line {
+  top: 833px;
+  left: 320px;
+  width: 1280px;
+  height: 1px;
+  background: #ebebeb;
+}
+
+.reviews__logos {
+  top: 902.5px;
+  left: 320px;
+  width: 1280px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 224px);
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.reviews__logos img {
+  max-width: 80%;
+  max-height: 80%;
+}

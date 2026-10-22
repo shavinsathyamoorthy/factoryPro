@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import "../style/Home.css";
 import About from "../components/About";
 import tick from "../assets/tick.png";
 import Services from "../components/Services";
 import Story from "../components/Story";
 import WhatWeDo from "../components/WhatWeDo";
 import OurWork from "../components/OurWork";
-import "../style/Home.css";
+import OurProcess from "../components/OurProcess";
+import PricingPlan from "../components/PricingPlan";
+import Testimonials from "../components/Testimonials";
+import LatestBlog from "../components/LatestBlog";
+
+
 
 const features = [
   "Advanced Manufacturing Solutions",
@@ -61,6 +66,10 @@ export default function Home() {
       <Story />
       <WhatWeDo />
       <OurWork />
+      <OurProcess />
+      <PricingPlan />
+      <Testimonials />
+      <LatestBlog />
     </>
   );
 }

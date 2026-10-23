@@ -1,0 +1,281 @@
+.approach {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 1146px;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: "Manrope", sans-serif;
+}
+
+.approach__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 581.8px;
+  background: url("../assets/services-bg.png") center / cover no-repeat;
+}
+
+.approach__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.approach__label {
+  position: absolute;
+  top: 110.6px;
+  left: 320px;
+  display: flex;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.approach__label img {
+  width: 16px;
+  height: 16px;
+}
+
+.approach__title {
+  position: absolute;
+  top: 143px;
+  left: 320px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.approach__title span,
+.approach__title strong {
+  display: block;
+}
+
+.approach__title span {
+  font-weight: 300;
+}
+
+.approach__title strong {
+  font-weight: 700;
+}
+
+.approach__text {
+  position: absolute;
+  top: 145.4px;
+  left: 1050px;
+  width: 550px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 400;
+}
+
+.approach__panel {
+  position: absolute;
+  top: 441.79px;
+  left: 320px;
+  width: 1280px;
+  height: 604.34px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.04);
+}
+
+.approach__tabs {
+  display: flex;
+  height: 101px;
+}
+
+.approach__tab {
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #ebebeb;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.approach__tab img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.approach__tab--mission {
+  width: 438.84px;
+}
+
+.approach__tab--vision {
+  width: 423.28px;
+}
+
+.approach__tab--value {
+  width: 417.89px;
+}
+
+.approach__tab.is-active {
+  background: #ff9900;
+  border-bottom: 1px solid #ff9900;
+  color: #ffffff;
+}
+
+.approach__tab.is-active img {
+  filter: brightness(0) invert(1);
+}
+
+.approach__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 503.34px;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.approach__info {
+  width: 514px;
+}
+
+.approach__desc {
+  margin: 0 0 40px;
+  color: #727272;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+
+.approach__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.approach__list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #111111;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.approach__list img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.approach__img {
+  width: 545px;
+  height: 343.34px;
+  border-radius: 40px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1400px) {
+  .approach__label,
+  .approach__title,
+  .approach__panel {
+    left: 24px;
+  }
+  .approach__text {
+    left: 760px;
+    width: 420px;
+  }
+  .approach__panel {
+    width: calc(100% - 48px);
+  }
+  .approach__tab--mission,
+  .approach__tab--vision,
+  .approach__tab--value {
+    width: 33.333%;
+  }
+  .approach__img {
+    width: 45%;
+    height: auto;
+    aspect-ratio: 545 / 343;
+  }
+}
+
+@media (max-width: 991px) {
+  .approach {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .approach__bg {
+    height: 560px;
+  }
+  .approach__label,
+  .approach__title,
+  .approach__text,
+  .approach__panel {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+  }
+  .approach__label {
+    padding-top: 90px;
+  }
+  .approach__title {
+    margin-top: 16px;
+    font-size: 34px;
+    line-height: 44px;
+    white-space: normal;
+  }
+  .approach__text {
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+  .approach__panel {
+    height: auto;
+  }
+  .approach__tabs {
+    flex-direction: column;
+    height: auto;
+  }
+  .approach__tab--mission,
+  .approach__tab--vision,
+  .approach__tab--value {
+    width: 100%;
+    height: 70px;
+  }
+  .approach__body {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+  .approach__info {
+    width: 100%;
+  }
+  .approach__img {
+    width: 100%;
+  }
+}

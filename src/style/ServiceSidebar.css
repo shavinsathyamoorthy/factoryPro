@@ -1,0 +1,132 @@
+.side {
+  width: 377px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Manrope", sans-serif;
+}
+
+.side__box {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+.side__head {
+  height: 70px;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  background: #ff9900;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.side__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.side__link {
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+  color: #111;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.side__link:hover {
+  color: #ff9900;
+}
+
+.side__list li:last-child .side__link {
+  border-bottom: 0;
+}
+
+.side__help {
+  position: relative;
+  min-height: 406.38px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  background: url("../assets/toplax-bg.jpg") center / cover no-repeat;
+  color: #fff;
+}
+
+.side__help::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.60);
+}
+
+.side__help > * {
+  position: relative;
+}
+
+.side__logo {
+  display: block;
+  width: 156px;
+  height: 54px;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.side__title {
+  margin: 20px 0 0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+}
+
+.side__title strong {
+  font-weight: 700;
+}
+
+.side__note {
+  margin: 8px 0 28px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.side__contact {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.side__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 153, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+  .side {
+    width: 100%;
+  }
+}

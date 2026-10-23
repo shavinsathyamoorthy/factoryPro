@@ -1,0 +1,258 @@
+.faq {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 1046px;
+  margin: 0 auto;
+  background: #fff;
+  color: #222;
+  font-family: "Manrope", sans-serif;
+}
+
+.faq__label,
+.faq__title,
+.faq__btn,
+.faq__photo,
+.faq__list {
+  position: absolute;
+}
+
+.faq__label {
+  top: 109.3px;
+  left: 320px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.faq__label img {
+  width: 16px;
+  height: 16px;
+}
+
+.faq__title {
+  top: 141.7px;
+  left: 320px;
+  margin: 0;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.faq__title span,
+.faq__title strong {
+  display: block;
+}
+
+.faq__title span {
+  font-weight: 300;
+}
+
+.faq__title strong {
+  font-weight: 700;
+}
+
+.faq__btn {
+  top: 160.5px;
+  left: 1459px;
+  width: 141px;
+  height: 50px;
+  padding: 2px;
+  border: 0;
+  border-radius: 10px;
+  background: #ff9900;
+  display: flex;
+  align-items: center;
+  font: inherit;
+  cursor: pointer;
+}
+
+.faq__btn-label,
+.faq__btn-arrow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq__btn-label {
+  flex: 1;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  font-weight: 500;
+}
+
+.faq__btn-arrow {
+  width: 42px;
+}
+
+.faq__photo {
+  top: 341.8px;
+  left: 320px;
+  width: 625px;
+  height: 618.75px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.faq__photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.faq__contact {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  padding: 0 57px 40px;
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.faq__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.faq__list {
+  top: 341.8px;
+  left: 975px;
+  width: 625px;
+  height: 618.75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.faq__item {
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.04);
+  transition: background 0.2s, color 0.2s;
+}
+
+.faq__item.is-open {
+  border-color: #ff9900;
+  background: #ff9900;
+  color: #fff;
+}
+
+.faq__head {
+  width: 100%;
+  height: 54px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq__head svg {
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq__item.is-open .faq__head svg {
+  transform: rotate(180deg);
+}
+
+.faq__a {
+  margin: 0;
+  padding: 19px 65px 21px 20px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1400px) {
+  .faq__label,
+  .faq__title,
+  .faq__photo {
+    left: 24px;
+  }
+  .faq__btn {
+    left: auto;
+    right: 24px;
+  }
+  .faq__photo {
+    width: calc(50% - 36px);
+  }
+  .faq__list {
+    left: calc(50% + 12px);
+    width: calc(50% - 36px);
+  }
+}
+
+@media (max-width: 991px) {
+  .faq {
+    height: auto;
+    padding: 80px 0;
+  }
+  .faq__label,
+  .faq__title,
+  .faq__btn,
+  .faq__photo,
+  .faq__list {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+  }
+  .faq__title {
+    margin-top: 16px;
+    font-size: 34px;
+    line-height: 44px;
+    white-space: normal;
+  }
+  .faq__btn {
+    width: 141px;
+    margin: 24px 0 0 24px;
+  }
+  .faq__photo {
+    height: 420px;
+    margin-top: 40px;
+    border-radius: 24px;
+  }
+  .faq__contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0 24px 24px;
+  }
+  .faq__list {
+    height: auto;
+    margin-top: 40px;
+    gap: 16px;
+  }
+  .faq__a {
+    padding-right: 20px;
+  }
+}
